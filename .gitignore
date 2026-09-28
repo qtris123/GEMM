@@ -1,0 +1,16 @@
+# Compiled binaries
+gemm_test
+*.o
+
+# Output and profiling directories
+output/
+**/output/
+
+# Nsight Profiler artifacts (contain captured env vars/tokens)
+*.nsys-rep
+*.sqlite
+*.qdstrm
+
+# Slurm outputs and logs
+*.out
+*.err
