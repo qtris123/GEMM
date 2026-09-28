@@ -21,7 +21,7 @@ By the end, you should be able to:
 6. Understand what Triton abstracts compared with CUDA.
 ## 2. Repository Structure
 ```text
-triton-gemm-learning/
+GEMM/
 ├── README.md
 ├── requirements.txt
 ├── kernels/

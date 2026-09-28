@@ -1,0 +1,19 @@
+"""Configuration and hardware specifications for NVIDIA A100 (Ampere / SM80)."""
+
+ARCH = "sm80"
+NAME = "NVIDIA A100-SXM4-80GB"
+
+# Hardware parameters
+NUM_SMS = 108
+PEAK_FP16_TFLOPS = 312.0  # Dense Tensor Core FP16
+PEAK_BF16_TFLOPS = 312.0
+PEAK_FP32_TFLOPS = 19.5   # Standard CUDA Core FP32
+MEM_BANDWIDTH_GB_S = 2039.0  # HBM2e
+
+# Tuning search spaces
+TILE_M_CANDIDATES = [64, 128, 256]
+TILE_N_CANDIDATES = [64, 128, 256]
+TILE_K_CANDIDATES = [32, 64]
+NUM_WARPS_CANDIDATES = [4, 8]
+NUM_STAGES_CANDIDATES = [2, 3, 4, 5]
+GROUP_M_DEFAULT = 8
