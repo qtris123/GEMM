@@ -14,3 +14,9 @@ output/
 # Slurm outputs and logs
 *.out
 *.err
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
